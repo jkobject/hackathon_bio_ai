@@ -9,8 +9,6 @@
 
 
 
-
-
 ### 1. Clone the repository
 ```bash
 #TODO
@@ -33,7 +31,6 @@ conda activate theremia
 python -m st_challenge.scripts.viz_slice INT1
 ```
 
-# st_challenge
 
 
 
