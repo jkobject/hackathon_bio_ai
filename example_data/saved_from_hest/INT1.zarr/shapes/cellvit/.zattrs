@@ -1,0 +1,86 @@
+{
+    "axes": [
+        "x",
+        "y"
+    ],
+    "coordinateTransformations": [
+        {
+            "input": {
+                "axes": [
+                    {
+                        "name": "x",
+                        "type": "space",
+                        "unit": "unit"
+                    },
+                    {
+                        "name": "y",
+                        "type": "space",
+                        "unit": "unit"
+                    }
+                ],
+                "name": "xy"
+            },
+            "output": {
+                "axes": [
+                    {
+                        "name": "x",
+                        "type": "space",
+                        "unit": "unit"
+                    },
+                    {
+                        "name": "y",
+                        "type": "space",
+                        "unit": "unit"
+                    }
+                ],
+                "name": "ST_downscaled_hires"
+            },
+            "scale": [
+                0.125,
+                0.125
+            ],
+            "type": "scale"
+        },
+        {
+            "input": {
+                "axes": [
+                    {
+                        "name": "x",
+                        "type": "space",
+                        "unit": "unit"
+                    },
+                    {
+                        "name": "y",
+                        "type": "space",
+                        "unit": "unit"
+                    }
+                ],
+                "name": "xy"
+            },
+            "output": {
+                "axes": [
+                    {
+                        "name": "x",
+                        "type": "space",
+                        "unit": "unit"
+                    },
+                    {
+                        "name": "y",
+                        "type": "space",
+                        "unit": "unit"
+                    }
+                ],
+                "name": "ST_downscaled_lowres"
+            },
+            "scale": [
+                0.05008012820512821,
+                0.05008012820512821
+            ],
+            "type": "scale"
+        }
+    ],
+    "encoding-type": "ngff:shapes",
+    "spatialdata_attrs": {
+        "version": "0.2"
+    }
+}
