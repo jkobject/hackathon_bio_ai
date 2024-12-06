@@ -142,3 +142,4 @@ dmypy.json
 figures/*/*.png
 figures/*.png
 hest_data/*
+!example_data/**/*
