@@ -1,0 +1,23 @@
+# conda env update -f environment.yaml
+name: theremia
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - transformers
+  - datasets
+  - ipykernel
+  - tqdm
+  - pip:
+    - spatialdata[extra]
+    - torch
+    - torchvideo
+    - monai
+    - pytorch-lightning
+    - transformers
+    - datasets
+    - einops
+    - timm
+    - einops_exts

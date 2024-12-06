@@ -1,0 +1,2 @@
+source: /data/etienne.doumazane/theremia/hest_data/wsis/
+dest: s3://renier-bucket-dev2024/etienne.doumazane/wsis/

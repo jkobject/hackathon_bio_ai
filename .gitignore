@@ -1,0 +1,8 @@
+.snakemake
+*.pyc
+__pycache__
+*.zarr
+*.egg-info
+.env
+data
+!data/.keep
