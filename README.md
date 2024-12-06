@@ -33,7 +33,6 @@ conda activate theremia
 python -m st_challenge.scripts.viz_slice INT1
 ```
 
-# st_challenge
 
 
 
