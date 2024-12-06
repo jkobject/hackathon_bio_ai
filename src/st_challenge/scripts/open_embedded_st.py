@@ -36,7 +36,7 @@ def make_embeddings(patchs):
             features_per_patch = encoder_model(res)
             features.append(features_per_patch)
 
-    return torch.cat(features, dim=0).unsqueeze(0)
+    return torch.cat(features, dim=0).numpy()
 
 def convert_center_to_slicing(coords_center, dimensions, reverse_order=False):
     """
@@ -97,9 +97,6 @@ class HEST:
         sdata.tables['table'].obsm['embedding'] = make_embeddings(np.array(patchs))
         return sdata
 
-
-
-
 def open_hest_ids(
         id_to_query :list,
         hf_token=os.environ.get('HF_TOKEN'),
@@ -110,5 +107,8 @@ def open_hest_ids(
     for id in id_to_query:
         hest = HEST(hf_token=hf_token, cache_dir=cache_dir)
         sdata_list.append(hest.load_dataset(id))
-        hest.empty_cache()
+    hest.empty_cache()
     return sdata_list
+
+if __name__ == "__main__":
+    print(open_hest_ids(["INT1", "INT2"]))
