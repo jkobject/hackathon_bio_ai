@@ -1,11 +1,17 @@
-# hackaton_bio_ai
+# Bio AI Hackathon 2024
 
-- run scPRINT and scDataloader
-- Downloader: HEST to spatial data files in lamindb (visium / )
+
+
+Functionality:
+
+- Getting embeddings using CONCH 1.5 for patches and TITAN for slides
+- Scripts to run [scPRINT](https://github.com/mahmoodlab/HEST) on spatial xenium datasets to get cell types and full gene expression
+- Downloader / converter of HEST1K to spatial data files in Lamindb
 - DataLoader for spatialdata
-- extract embeddings from TITAN and store in .obsm() and ask questions
-- add textbox to napari to ask questions
--
+- Extract embeddings from TITAN and store in .obsm() and ask questions
+- Buttons and Textboxs to Napari to ask questions and search for patches
+
+
 
 
 
