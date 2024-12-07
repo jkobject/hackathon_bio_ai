@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 PATCH_SIZE_LV0 = 1024
-MODEL_PATH = "/mnt/HDD8TO/models/"
+MODEL_PATH = "./model"
 
 def make_embeddings(patchs):
 
@@ -81,7 +81,7 @@ class HEST:
     def load_dataset(self, dataset_id, fullres=True):
         if not dataset_id in os.listdir(self.cache_dir):
             self.cache_dataset(dataset_id)
-        for st in iter_hest(self.cache_dir, id_list=['INT1']): # Replaced by one that is present
+        for st in iter_hest(self.cache_dir, id_list=[dataset_id]): # Replaced by one that is present
             sdata = st.to_spatial_data(fullres=fullres)
         sdata = self.repatch(sdata)
         return sdata
@@ -104,11 +104,11 @@ def open_hest_ids(
         ):
 
     sdata_list = []
-    for id in id_to_query:
+    for _id in id_to_query:
         hest = HEST(hf_token=hf_token, cache_dir=cache_dir)
-        sdata_list.append(hest.load_dataset(id))
-    hest.empty_cache()
+        sdata_list.append(hest.load_dataset(_id))
+    # hest.empty_cache()
     return sdata_list
 
 if __name__ == "__main__":
-    print(open_hest_ids(["INT1", "INT2"]))
+    print(open_hest_ids(["INT1"]))
