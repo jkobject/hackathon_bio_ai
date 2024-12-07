@@ -9,10 +9,27 @@
 
 
 
-### 1. Clone the repository
+### 1. Install the package in editable mode
 ```bash
-#TODO
+git clone git@github.com:jkobject/hackathon_bio_ai.git
+cd hackathon_bio_ai
+conda create -n st_challenge_dev python=3.10
+conda activate st_challenge_dev
+pip install -e .
 ```
+
+### Install the package
+```bash
+conda create -n st_challenge_prod python=3.10
+conda activate st_challenge_prod
+pip install git+https://github.com/jkobject/hackathon_bio_ai.git
+```
+
+```bash
+conda deactivate
+conda remove --name st_challenge_prod --all
+```
+
 
 ### 2. Install the dependencies
 ```bash
