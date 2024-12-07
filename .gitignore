@@ -147,3 +147,5 @@ hest_data/*
 *.ckpt
 *.h5ad
 notebooks/collator_output.txt
+google-cloud-sdk
+google-cloud-cli-linux-x86_64.tar.gz
