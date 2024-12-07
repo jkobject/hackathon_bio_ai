@@ -1,6 +1,6 @@
 # Bio AI Hackathon 2024
 
-
+![image](./main.png)
 
 Functionality:
 
@@ -10,9 +10,6 @@ Functionality:
 - DataLoader for spatialdata
 - Extract embeddings from TITAN and store in .obsm() and ask questions
 - Buttons and Textboxs to Napari to ask questions and search for patches
-
-
-
 
 
 ### 1. Install the package in editable mode
