@@ -143,4 +143,4 @@ figures/*/*.png
 figures/*.png
 hest_data/*
 !example_data/**/*
-.pkl
+*.pkl
