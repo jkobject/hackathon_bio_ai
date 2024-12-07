@@ -146,3 +146,4 @@ hest_data/*
 *.pkl
 *.ckpt
 *.h5ad
+notebooks/collator_output.txt
