@@ -143,3 +143,6 @@ figures/*/*.png
 figures/*.png
 hest_data/*
 !example_data/**/*
+*.pkl
+*.ckpt
+*.h5ad
